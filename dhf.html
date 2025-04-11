@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+          }
+        .navbar{
+            background-color: #121212;
+            display:flex;
+            top:0;
+            gap: 40px;
+            justify-content: center;
+            padding: 15px 0;
+            top: 0;
+        }
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        .navbar a:hover{
+            background-color:#121212;
+            color: lightskyblue;
+            border-radius: 6px;
+        }
+        .cards{
+            margin: 20px;
+            display: flex;
+            gap:20px;
+        }
+        .card{
+            background-color: #181818;
+            padding: 15px;
+            border-radius: 10px;
+            width: 140px;
+        }
+        .card img{
+            width: 100%;
+            border-radius: 8px;
+            border:2px solid grey;
+            height: 140px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card p {
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+            overflow-wrap: break-word;
+          }
+          
+        .image:hover {
+            transform: scale(1.05);
+        }
+        .image img{
+                width: 150px;         
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover; 
+                border: 2px solid #fff; 
+              } 
+        .image p{
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+        }    
+        #hello{
+            text-align: center;
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+        <a href="#trending">Trending</a>
+        <a href="#artists">Artists</a>
+        <a href="#albums">Albums</a>
+        <a href="#radio">Radio</a>
+        <a href="#charts">Charts</a>
+      </div>
+      <main>
+        <div class="main">
+            <div class="section" id="trending">
+                <h2>Trending Songs</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="IMG-20250411-WA0090.jpg">
+                        <h4 >Mannd</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0095.jpg">
+                        <h4>Young Goat</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0039.jpg">
+                        <h4>Passo Bem Solto</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0081.jpg
+                        ">
+                        <h4>Finding Her</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0093.jpg">
+                        <h4>CHAL </h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0088.jpg">
+                        <h4>God Bless U</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0083.jpg">
+                        <h4>Jhol
+                        </h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0091.jpg">
+                        <h4>Die With A Smile</h4>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0085.jpg">
+                        <h4>Pal Pal</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="artists">
+                <h2>Popular Artists</h2>
+                <div class="cards">
+                    <div class="image">
+                        <img src="pri.jpg">
+                        <h4>Pritam</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="arij.jpg">
+                        <h4>Arjit Singh</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="ar.jpg">
+                        <h4>A.R.Rahman</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="udit.jpg">
+                        <h4>Udit Narayan</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="vis.jpg">
+                        <h4>Vishal-Shekar</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="anuv.jpg">
+                        <h4>Anuv Jain</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="dil.jpg">
+                        <h4>Diljit</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="atif.jpg">
+                        <h4>Atif Aslam</h4>
+                        <p>Artist/p>
+                    </div>
+                    <div class="image">
+                        <img src="yo.jpg">
+                        <h4>Yo Yo Honey Singh</h4>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="albums">
+                <h2>Popular albums and singles</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="yehj.jpg">
+                        <h4>Yeh Jawaani Hai Deewani</h4>
+                        <p>Film 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="sanam.jpg">
+                        <h4>
+                            Sanam Teri Kasam(Original Motion Picture Soundtrack)
+                        </h4>
+                        <p>Himesh Reshammiya.Sameer.Anjaan.Subrat Sinha</p>
+                    </div>
+                    <div class="card">
+                        <img src="IMG-20250411-WA0095.jpg">
+                        <h4>Young G.O.A.T</h4>
+                        <p>Cheema Y ,Gur Sidhu</p>
+                    </div>
+                    <div class="card">
+                        <img src="aas2.jpg">
+                        <h4>Aashiqui 2</h4>
+                        <p>Mithoon,Ankit Tiwari.Jeet Gannguli</p>
+                    </div>
+                    <div class="card">
+                        <img src="yo.jpg">
+                        <h4>Glory</h4>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="card">
+                        <img src="ranj.jpg">
+                        <h4>Raanjhan(From "Do Patti")</h4>
+                        <p>Sachet-Parampara.Raanjhan(From "Do Patti")</p>
+                    </div>
+                    <div class="card">
+                        <img src="ouat.jpg">
+                        <h4>Best Of Romance</h4>
+                        <p>Pritam.Laxmikant-Pyarelal.Anupam Amod</p>
+                    </div>
+                    <div class="card">
+                        <img src="ulti.jpg">
+                        <h4>Ultimate Love Songs-Arjit Singh</h4>
+                        <p>Arjit Singh</p>
+                    </div>
+                    <div class="card">
+                        <img src="pata.jpg">
+                        <h4>Patandar</h4>
+                        <p>Johnny Jewel.The Key</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="radio">
+                <h2>Popular radio</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="ataslam.jpg">
+                        <p>Atif Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="kk.jpg">
+                        <p> KK Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="uditR.jpg">
+                        <p>Udit Narayan Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="gv.jpg">
+                        <p>G.V Prakash Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="rahFK.jpg">
+                        <p>Rahat Fateh Ali Khan Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="kik.jpg">
+                        <p>Kishor Kumar Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="mohamad rafi.jpg">
+                        <p>Mohammed Rafi Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="kumar sanu.jpg">
+                        <p>Kumar Sanu Radio</p>
+                    </div>
+                    <div class="card">
+                        <img src="alka yagnik.jpg">
+                        <p>Alka Yagnik Radio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <div class="section" id="charts">
+        <h2>Featured Charts</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="tsong.jpg">
+            <p>Your weekly update of the most played tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="Tindia.jpg">
+            <p>Your weekly update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="glogal.jpg">
+            <p>Your daily update of the most plsyed tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="tsongindia.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          <div class="card">
+            <img src="viral.jpg">
+            <p>Your daily update of the most viral tracks right now-Global.</p>
+          </div>
+          <div class="card">
+            <img src="viralindia.jpg">
+            <p>Your daily update of the most played tracks right now-India.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="hello">
+        
+            <p>Hi! This is Prithiba Waikhom.<br>BCA 4th Semester, NIELIT,Imphal</p>
+    
+    </div>
+    
+    
+      
+</body>
+</html>
